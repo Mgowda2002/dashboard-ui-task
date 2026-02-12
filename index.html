@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Figma Style Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<div class="company">Company Name</div>
+
+<div class="sidebar-grid">
+
+<div class="side-tile active">
+<i data-lucide="check-square"></i>
+<span>Tasks</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="users"></i>
+<span>Connection</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="file-text"></i>
+<span>Offering</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="file"></i>
+<span>RFQ</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="edit"></i>
+<span>Quote</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="shopping-cart"></i>
+<span>Sale</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="shopping-bag"></i>
+<span>Purchase</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="package"></i>
+<span>Inventory</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="settings"></i>
+<span>Production</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="book"></i>
+<span>Accounts</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="database"></i>
+<span>OMS</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="credit-card"></i>
+<span>Expenses</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="folder"></i>
+<span>Project</span>
+</div>
+
+<div class="side-tile">
+<i data-lucide="activity"></i>
+<span>Activity</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<div class="topbar">
+<input placeholder="Search for">
+<div class="top-icons">
+<i data-lucide="bell"></i>
+<i data-lucide="message-square"></i>
+<i data-lucide="user"></i>
+</div>
+</div>
+
+<div class="tabs">
+<span class="tab active">All</span>
+<span class="tab">My</span>
+<span class="tab">Team</span>
+<span class="tab">Overdue</span>
+<span class="tab">Completed</span>
+</div>
+
+<!-- TOP DASHBOARD -->
+<div class="top-layout">
+
+<div class="card-grid">
+
+<div class="card gradient">
+<h4>Total tasks</h4>
+<h1>123</h1>
+<p>↑ 5 Tasks increased</p>
+</div>
+
+<div class="card">
+<h4>Completion Rate</h4>
+<h1>50%</h1>
+<p>↑ 5% from last Month</p>
+</div>
+
+<div class="card">
+<h4>Overdue Rate</h4>
+<h1>35%</h1>
+<p>↓ 4% from last Month</p>
+</div>
+
+<div class="card">
+<h4>Avg Closure Time</h4>
+<h1>3 Days</h1>
+<p>↓ 4% from last Month</p>
+</div>
+
+</div>
+
+<div class="card graph-card">
+<h4>Task Completion Trend</h4>
+<canvas id="taskChart"></canvas>
+</div>
+
+</div>
+
+<!-- TASK LIST SECTION -->
+<div class="task-grid">
+
+<div class="task yellow">
+<h4>Title</h4>
+<p>Task Id #54315316546</p>
+<span class="badge started">Started</span>
+</div>
+
+<div class="task red">
+<h4>Title</h4>
+<p>Task Id #54315316546</p>
+<span class="badge pending">Pending</span>
+</div>
+
+<div class="task green">
+<h4>Title</h4>
+<p>Task Id #54315316546</p>
+<span class="badge complete">Completed</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="right">
+<div class="avatar">S</div>
+<h3>Full Name</h3>
+<p class="muted">Designation</p>
+
+<div class="company-box">
+Company Name <br>
++91 9876543210
+</div>
+
+<button class="btn grey">Settings</button>
+<button class="btn red">Sign Out</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>
